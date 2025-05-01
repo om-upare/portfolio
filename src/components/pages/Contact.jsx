@@ -13,22 +13,31 @@ const Contact = () => {
     message: "",
   });
 
+  const [isSending, setIsSending] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_Service_ID,
-        import.meta.env.VITE_Templete_ID,
-        e.target,
-        import.meta.env.VITE_API_Public_Key
-      )
-      .then((result) => {
-        if (result) toast.success("Email Sent Successfully");
+    const promise = emailjs.sendForm(
+      import.meta.env.VITE_Service_ID,
+      import.meta.env.VITE_Template_ID,
+      e.target,
+      import.meta.env.VITE_API_Public_Key
+    );
+
+    toast.promise(promise, {
+      loading: "Sending message...",
+      success: "Message sent successfully!",
+      error: "Something went wrong!",
+    });
+
+    promise
+      .then(() => {
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch((e) => {
-        if (e) toast.error("Somthing went wrong!");
+      .finally(() => {
+        setIsSending(false);
       });
   };
 
@@ -39,7 +48,7 @@ const Contact = () => {
     >
       <Toaster richColors closeButton />
       <ScrollAnimation>
-        <div class="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-rose-500 from-45% to-white bg-clip-text text-transparent text-center text-shadow-lg/20">
             Get In Touch
           </h2>
@@ -88,6 +97,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
+              disabled={isSending}
               className="cursor-pointer bg-rose-600/80 text-gray-200 w-full py-3 px-6 rounded font-medium  relative overflow-hidden hover:translate-y-0.5 hover:shadow-sm shadow-gray-500/50 transition-all"
             >
               Send Message
@@ -102,7 +112,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/om-upare" target="_blank">
               <FaLinkedin className=" hover:text-blue-500 transition-all hover:translate-y-0.5" />
             </a>{" "}
-            <a href="tel:+7066778552">
+            <a href="tel:+07066778552">
               <FaWhatsapp className=" hover:text-green-500 transition-all hover:translate-y-0.5" />
             </a>
             <a href="mailto:omupare456@gmail.com">
