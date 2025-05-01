@@ -112,7 +112,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/om-upare" target="_blank">
               <FaLinkedin className=" hover:text-blue-500 transition-all hover:translate-y-0.5" />
             </a>{" "}
-            <a href="tel:+07066778552">
+            <a href="tel:+7066778552">
               <FaWhatsapp className=" hover:text-green-500 transition-all hover:translate-y-0.5" />
             </a>
             <a href="mailto:omupare456@gmail.com">
