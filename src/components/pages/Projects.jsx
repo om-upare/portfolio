@@ -101,7 +101,8 @@ const Projects = () => {
                 <div className="flex gap-2 mt-1">
                   <FaGithub className="my-5" />
                   <a
-                    href=""
+                    href="https://github.com/om-upare/portfolio.git"
+                    target="_blank"
                     className="text-white hover:text-rose-400 transition-colors my-4"
                   >
                     Repository
