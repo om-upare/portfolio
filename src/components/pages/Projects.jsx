@@ -83,7 +83,7 @@ const Projects = () => {
                 notifications.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["ReactJS", "Tailwindcss", "EmailJS", "Sonner"].map(
+                {["ReactJS", "TailwindCSS", "EmailJS", "Sonner"].map(
                   (skill, key) => {
                     return (
                       <span
@@ -132,7 +132,7 @@ const Projects = () => {
                 tasks.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["Tailwindcss", "JavaScript", "ReactJS", "ContextAPI"].map(
+                {["TailwindCSS", "JavaScript", "ReactJS", "ContextAPI"].map(
                   (skill, key) => {
                     return (
                       <span

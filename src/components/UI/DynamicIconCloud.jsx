@@ -11,6 +11,10 @@ const slugs = [
   "git",
   "github",
   "redux",
+  "express",
+  "mongodb",
+  "mysql",
+  "python",
 ];
 
 const useIcons = (slugs) => {

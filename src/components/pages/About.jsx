@@ -8,12 +8,16 @@ const About = () => {
     "HTML",
     "CSS",
     "JavaScript",
-    "ReactJs",
+    "ReactJS",
     "Redux",
-    "Tailwindcss",
-    "MySql",
-    "Motion",
-    "NodeJs",
+    "TailwindCSS",
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "Python",
   ];
 
   return (
