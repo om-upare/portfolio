@@ -18,11 +18,10 @@ const Home = () => {
           </h1>
 
           <p className="text-gray-400 text-md md:text-lg mb-8 max-w-lg mx-auto">
-            As a passionate frontend developer, I transform design concepts into
-            engaging, interactive digital experiences. I build visually
-            appealing and responsive interfaces that seamlessly integrate
-            creativity with functionality, ensuring an exceptional user journey
-            across all devices.
+            I’m a web developer who turns ideas into user-friendly online
+            experiences. From crafting clean, responsive layouts to integrating
+            back-end services, I build reliable, engaging applications that work
+            seamlessly on any device.
           </p>
 
           <div className="flex justify-center space-x-4">
