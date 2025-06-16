@@ -48,7 +48,7 @@ const DynamicIconCloud = () => {
         zoomOnScroll: false,
         wheelZoom: false,
         pinchZoom: false,
-        initial: [0.7, 0], // horizontal spin at 30% of maxSpeed
+        initial: [0.1, 0], // horizontal spin at 30% of maxSpeed
         decel: 0.95, // no slowdown
         maxSpeed: 0.01, // cap absolute speed
         minSpeed: 0.01,

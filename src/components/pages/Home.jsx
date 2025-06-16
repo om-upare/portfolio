@@ -29,7 +29,7 @@ const Home = () => {
 
           <div className="flex justify-center space-x-4">
             <a
-              href="https://drive.google.com/file/d/12tlMbbH_QR2PD4nlshV58ckQ9bDde9I3/view?usp=sharing"
+              href="https://drive.google.com/file/d/12tlMbbH_QR2PD4nlshV58ckQ9bDde9I3/view?usp=shari"
               target="_blank"
               className="bg-rose-600/80 text-gray-200 py-3 px-10 rounded font-medium relative overflow-hidden 
               hover:-translate-y-0.5 hover:shadow-sm shadow-gray-500/50 transition-all"
