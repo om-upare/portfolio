@@ -13,7 +13,10 @@ const Home = () => {
           <div className="w-40 md:w-60 mx-auto my-5">
             <DynamicIconCloud />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-rose-600 from-45% to-white bg-clip-text text-transparent text-shadow-lg/20">
+          <h1
+            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-rose-600 from-45% to-white bg-clip-text 
+          text-transparent text-shadow-lg/20"
+          >
             Hi, I'm Om.
           </h1>
 
@@ -26,15 +29,17 @@ const Home = () => {
 
           <div className="flex justify-center space-x-4">
             <a
-              href="https://drive.google.com/file/d/1yjpG_ZvvyuAy7w-2wjTWEFBe4VxZ_blO/view?usp=sharing"
+              href="https://drive.google.com/file/d/12tlMbbH_QR2PD4nlshV58ckQ9bDde9I3/view?usp=sharing"
               target="_blank"
-              className="bg-rose-600/80 text-gray-200 py-3 px-10 rounded font-medium relative overflow-hidden hover:-translate-y-0.5 hover:shadow-sm shadow-gray-500/50 transition-all"
+              className="bg-rose-600/80 text-gray-200 py-3 px-10 rounded font-medium relative overflow-hidden 
+              hover:-translate-y-0.5 hover:shadow-sm shadow-gray-500/50 transition-all"
             >
               Resume
             </a>
             <a
               href="#contact"
-              className="border border-rose-600/50 text-rose-600/80 py-3 px-6 rounded font-medium duration-200 hover:-translate-y-0.5 hover:bg-rose-500/10 hover:shadow-sm shadow-gray-500/50 transition-all"
+              className="border border-rose-600/50 text-rose-600/80 py-3 px-6 rounded font-medium duration-200 
+              hover:-translate-y-0.5 hover:bg-rose-500/10 hover:shadow-sm shadow-gray-500/50 transition-all"
             >
               Contact Me
             </a>
